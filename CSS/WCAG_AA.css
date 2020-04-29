@@ -1,0 +1,46 @@
+/*This is a quick patch*/
+
+/*root is super powerful*/
+/*specifying reusable variables even in static CSS is very helpful*/
+:root {
+    --main-bg-color: #e4e4e4;
+    --main-txt-color: #333;
+    --main-padding: 15px;
+  }
+
+/*browser default is 16px, also smallest reccomended font to get to AAA*/
+/*specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default*/
+body {  
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: swap;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  padding: var(--main-padding) 10px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/*you need :focus for tab/keyboard navigation*/
+a:focus {
+  background: rgba(238, 232, 170, 0.5);
+}
+
+/*specifying a max width is suggested to be 84 characters, esp for monospace fonts */
+p {
+  max-width: 84ch;
+}
+
+/* whenever an image is a BG but there is no fallback color, you risk contrast ratio issues */
+.hasBackground {
+  background-color: #111;
+}
+
+/* DEBUG ZONE */
+
+/* img w/o alt attribute before JS applies one */
+img:not([alt]) {
+  border: 2px dashed red;
+}
