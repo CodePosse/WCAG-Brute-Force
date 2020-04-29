@@ -27,6 +27,10 @@ We also remove tabindexes and then re-add to clickable links in the order from t
 
 There is also a way to add titles to iframes. This helps when you embed third party code like from Vimeo. I will add an advanced way to detect the domain it is calling and then use it to have contextual titles.
 
+License
+----
+
+FREEEEEEEEEE
 
 
    [repo]: <https://github.com/CodePosse/WCAG-Brute-Force.git>
