@@ -14,8 +14,11 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 - tab key nav can be reset to respect the linear DOM order and should have a focus bg color
 - All links need to be visually distinct, ie underlined or made to look like a CTA
 - Default font size is 16px, never go below 11px for AA. AAA demands smallest can be 16px
-- Try to avoid area wraps with a tags "block links"
+- Try to avoid area wraps with a tags "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
 - Never use `content:` in CSS, screenreaders can't see it
+- [Skip-to method](https://codepen.io/matuzo/pen/RZBNjP#content) I'll add this soon
+- [Style switcher](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
+- [Form Resource](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 
 ### Indemnification
 I make no warranty that this will fix everything, but there is a lot it can help with.
