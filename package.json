@@ -1,0 +1,30 @@
+{
+  "name": "wcag-brute-force",
+  "version": "1.0.0",
+  "description": "WCAG AA Fixes For Devs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodePosse/WCAG-Brute-Force.git"
+  },
+  "keywords": [
+    "WCAG",
+    "Compliance",
+    "508",
+    "AA"
+  ],
+  "author": "Tim Hunold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodePosse/WCAG-Brute-Force/issues"
+  },
+  "homepage": "https://github.com/CodePosse/WCAG-Brute-Force#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "gulp": "^4.0.2",
+    "gutil": "^1.6.4"
+  }
+}
