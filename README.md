@@ -6,6 +6,17 @@ This is a file I ([tim hunold]) am making using CSS and jQuery :poop: to help pa
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
+## WCAG Considerations
+- Images require alt with a value, do not use titles
+- Iframes require titles
+- ABBR elements for abbreviation explanations HTML
+- Specifying a max character width helps wrap text
+- tab key nav can be reset to respect the linear DOM order and should have a focus bg color
+- All links need to be visually distinct, ie underlined or made to look like a CTA
+- Default font size is 16px, never go below 11px for AA. AAA demands smallest can be 16px
+- Try to avoid area wraps with a tags "block links"
+- Never use `content:` in CSS, screenreaders can't see it
+
 ### Indemnification
 I make no warranty that this will fix everything, but there is a lot it can help with.
 
@@ -16,6 +27,8 @@ In CSS I am adding a lot of things, there are comments to what a line is and doe
 We define and leverage root and simple variables. Also there are font-handling methods that are often overlooked. It also calls out that links need to have underlines unless they get a visually dominant treatment like a CTA (call to action)
 
 ## JavaScript
+The JS directory has its own README file.
+
 Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do here are attribute manipulations and those generally work from early versions on to the modern releases.
 
 Vanilla JavaScript has been added as well.
