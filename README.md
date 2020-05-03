@@ -18,7 +18,9 @@ We define and leverage root and simple variables. Also there are font-handling m
 ## JavaScript
 Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do here are attribute manipulations and those generally work from early versions on to the modern releases.
 
-I will be adding Vanilla JavaScript to this, but for speed, I want to get the logic down first.
+Vanilla JavaScript has been added as well.
+
+Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all.
 
 ### What it does
 We add missing alt attributes with a value and alts without values, plus a default role. The next thing it does is remove titles from images.
