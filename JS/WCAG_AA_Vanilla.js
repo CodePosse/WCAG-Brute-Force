@@ -1,66 +1,33 @@
 // Vanilla JavaScript WCAG Hot Fix //
 /* select a method below that works for you */
 
-
-
-
-//add to images without alt//
-
-/*all images get the same alt, overwrites existing alts*/
-function init() {
-    imgs = document.images;
-    for (i = 0; i < imgs.length; i++) {
-        imgs[i].alt = "my alt text";
+// fixes missing alt and remove title attributes
+// it is faster to grab the images and then filter them instead of going back to select all images again
+window.onload = () => {
+    const imgs = document.querySelectorAll("img")
+    const iframes = document.querySelectorAll("iframe")
+    const allElems = document.querySelectorAll("*")
+    const aTag = document.querySelectorAll("a")
+    const checkAttr = (el, attr) => {
+        for (let i = 0; i < el.attributes.length; i++) {
+            if (el.attributes.getNamedItem(attr)) return true
+        }
+        return false
     }
-}
-init();
 
-/*add to first specific image without alt*/
-document.querySelector('img[src="missingalt.gif"]').setAttribute('alt', 'my alt text')
+    imgs.forEach(img => {
+        // fixes missing alt attributes
+        if (!checkAttr(img, 'alt')) img.setAttribute('alt', 'Now I have an ALT tag')
+        // fixes empty alt values
+        if (checkAttr(img, 'alt') && img.alt === '') img.alt = 'Now I have an ALT text'
+        //images should not have titles
+        img.removeAttribute('title')
+    })
 
-/*add alt to first image without an alt*/
-document.querySelector('img:not([alt])').setAttribute('alt', 'my alt text');
+    // fixes missing iframe titles
+    iframes.forEach(ifrm => { if (!checkAttr(ifrm, 'title')) ifrm.setAttribute('title', 'Now I have a TITLE tag') })
 
-/*add alt to first image with an alt but no value*/
-document.querySelector("img:not([alt=''])").setAttribute('alt', 'my alt text');
-
-/*add to all images regardless*/
-var y = document.querySelectorAll("img");
-var i;
-for (i = 0; i < y.length; i++) {
-    y[i].setAttribute("alt", "my alt text");
-}
-
-/*same but for missing tag*/
-var y = document.querySelectorAll('img:not([alt])');
-var i;
-for (i = 0; i < y.length; i++) {
-    y[i].setAttribute("alt", "my alt text");
-}
-
-/*add to a specific img with an ID*/
-var x = document.getElementById("myAnchor");
-if (!x.hasAttribute("alt")) {
-    x.setAttribute("alt", "my alt text");
-}
-
-/*add to the first image on a page, and it doesn't have an alt*/
-var x = document.getElementsByTagName("img")[0];
-if (!x.hasAttribute("alt")) {
-    x.setAttribute("alt", "my alt text");
-}
-
-/*remove titles from images*/
-var y = document.querySelectorAll("img");
-var i;
-for (i = 0; i < y.length; i++) {
-    y[i].removeAttribute("title");
-}
-
-//EMBEDED MEDIA//
-/*add to iframes without titles*/
-var y = document.querySelectorAll('iframe:not([title])');
-var i;
-for (i = 0; i < y.length; i++) {
-    y[i].setAttribute("title", "my title text");
+    // fixes confusing layout tabindex but it is risky. We remove all tab indexes, then re-add to all a tags
+    allElems.forEach(el => el.removeAttribute('tab-index'))
+    aTag.forEach((a, i) => a.setAttribute('tabindex', i))
 }
