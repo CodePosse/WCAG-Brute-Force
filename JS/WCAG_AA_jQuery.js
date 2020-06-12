@@ -23,6 +23,25 @@ $('a').each(function () {
   $(this).attr('tabindex', n++);
 });
 
+
+// form fixes
+// add labels to form elements
+
+// this is for a specific named item, goes by the ID value
+$( "#login" ).prepend( "<label for='login'>Username</label>" );
+
+// steals ID and makes label for it
+// rips out placeholder as label text
+
+$("form *[id]").each(function () {
+  var id = this.id;
+  var ph = this.placeholder;
+  $(this).removeAttr("placeholder");
+  $(this).before("<label for=" + id + ">" + ph + ":</label>");
+});
+
+
+
 // acknowledge modal close buttons
 //redefine these values
 $(modal_or_menu_element).keyup(function (event) {
@@ -34,21 +53,3 @@ $(modal_or_menu_element).keyup(function (event) {
   }
 });
 
-// form fixes
-// add labels to form elements
-
-// this is for a specific named item, goes by the ID value
-//$( "#login" ).prepend( "<label for='login'>Username</label>" );
-
-// form add a label function
-// steals ID and makes label for it
-// rips out placeholder as label name
-
-$("form").each(function () {
-  $("[id]").each(function () {
-    var id = this.id;
-    var ph = this.placeholder;
-    $(this).removeAttr("placeholder");
-    $(this).before("<label for=" + id + ">" + ph + ":</label>");
-  });
-});
