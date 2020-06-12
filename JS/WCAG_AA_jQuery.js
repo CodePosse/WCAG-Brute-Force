@@ -32,7 +32,6 @@ $("#login").prepend("<label for='login'>Username</label>");
 
 // steals ID and makes label for it
 // rips out placeholder as label text
-
 $("form *[id]").each(function () {
   var id = this.id;
   var ph = this.placeholder;

@@ -31,3 +31,29 @@ window.onload = () => {
     allElems.forEach(el => el.removeAttribute('tab-index'))
     aTag.forEach((a, i) => a.setAttribute('tabindex', i))
 }
+
+
+// forms need labels
+// placeholders become label text, labels are bound to the input ID 
+
+var inputs = document.querySelectorAll("input").forEach(function (el) {
+    // grab the id
+    let inputID = el.getAttribute("id");
+    // grab the placeholder
+    let ph = el.getAttribute("placeholder");
+    // create label
+    let newLabel = document.createElement("label");
+    // insert label we created before the input
+    el.before(newLabel);
+    // remove redundant placeholder text
+    el.removeAttribute("placeholder");
+    // use 'for' to bind to input ID
+    newLabel.setAttribute("for", inputID);
+    // set a custom class to the label
+    newLabel.className = "myclass";
+    // make placeholder text the label value
+    newLabel.append(ph);
+    // lets see them in the console
+    console.log("Placeholders: " + ph + " created for ID:" + inputID);
+});
+
