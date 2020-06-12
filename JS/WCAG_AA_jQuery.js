@@ -28,7 +28,7 @@ $('a').each(function () {
 // add labels to form elements
 
 // this is for a specific named item, goes by the ID value
-$( "#login" ).prepend( "<label for='login'>Username</label>" );
+$("#login").prepend("<label for='login'>Username</label>");
 
 // steals ID and makes label for it
 // rips out placeholder as label text
