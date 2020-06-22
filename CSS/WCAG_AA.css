@@ -6,6 +6,7 @@
   --main-bg-color: #e4e4e4;
   --main-txt-color: #333;
   --main-padding: 15px;
+  --tabnav-background: lightyellow;
 }
 
 /* browser default is 16px, also smallest font to get to AAA */
@@ -24,8 +25,10 @@ a {
 }
 
 /* you need :focus for tab/keyboard navigation */
-a:focus {
-  background: rgba(238, 232, 170, 0.5);
+a:focus,
+input:focus {
+  background: var(--tabnav-background);
+  color: var(--main-txt-color);
 }
 
 /* Bootsrap screen reader only cloaked content */
@@ -50,4 +53,8 @@ p {
 /* img w/o alt attribute before JS applies one */
 img:not([alt]) {
   border: 2px dashed red;
+}
+/* input w/o a label before it */
+:not(label) + input {
+  background-color: red;
 }
