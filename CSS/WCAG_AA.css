@@ -8,7 +8,7 @@
   --main-padding: 15px;
 }
 
-/* browser default is 16px, also smallest reccomended font to get to AAA */
+/* browser default is 16px, also smallest font to get to AAA */
 /* specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default */
 body {
   font-size: 16px;

@@ -6,9 +6,11 @@
   --main-bg-color: #e4e4e4;
   --main-txt-color: #333;
   --main-padding: 15px;
+  --tabnav-border: 1px solid red;
+  --tabnav-background: lightyellow;
 }
 
-/* browser default is 16px, also smallest reccomended font to get to AAA */
+/* browser default is 16px, also smallest font to get to AAA */
 /* specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default */
 body {
   font-size: 16px;
@@ -20,4 +22,31 @@ body {
 }
 
 /* links need to be called out visually */
-a {text-decoration: underline;}
+a {
+  text-decoration: underline;
+}
+
+/* no border as to not mess up layout spacing */
+a:active,
+a:focus {
+  background-color: var(--tabnav-background);
+}
+
+/* if you use Bootstrap */
+.sr-only {
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+}
+
+/* form stuff */
+form input,
+form textarea,
+form button {
+  color: var(--main-txt-color);
+  border: blue 1px solid;
+}
+form *:focus,
+form *:active {
+  background-color: var(--tabnav-background);
+  border: var(--tabnav-border);
+}
