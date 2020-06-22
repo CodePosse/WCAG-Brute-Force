@@ -8,7 +8,7 @@ In each file there is way more code than you need, so cut-and-paste accordingly.
 
 ## Coverage
 
-As of this writing (June 14 2020) both jQuery and VanillaJS have fixes for form labels, tab index, adds titles to iframes, and adding missing alt attributes.
+As of this writing (June 21 2020) both jQuery and VanillaJS have fixes for form labels, tab index, adds titles to iframes, and adding missing alt attributes.
 
 [jquery]: http://jquery.com
 [es6]: http://es6-features.org/#Constants

@@ -1,6 +1,6 @@
 # WCAG-Brute-Force
 
-Brute force WCAG AA patching to pass [wave tool] tests.
+Brute force WCAG AA patching to pass [wave tool] tests. _Updated: June 21 2020_
 
 ## Overview
 
@@ -18,7 +18,7 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 - All links need to be visually distinct, ie underlined or made to look like a CTA
 - Default font size is 16px, never go below 11px for AA. AAA demands smallest can be 16px
 - Try to avoid area wraps with a tags "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
-- Never use `content:` in CSS, screenreaders can't see it
+- Never use `content:` in CSS, screen readers can't see it
 - [Skip-to method](https://codepen.io/matuzo/pen/RZBNjP#content) I'll add this soon
 - [Style switcher](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
 - [Form Resource](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
@@ -33,7 +33,7 @@ In CSS I am adding a lot of things, there are comments to what a line is and doe
 
 ### What it does
 
-We define and leverage root and simple variables. Also there are font-handling methods that are often overlooked. It also calls out that links need to have underlines unless they get a visually dominant treatment like a CTA (call to action)
+We define and leverage root and simple variables. Also, there are font-handling methods that are often overlooked. It also calls out that links need to have underlines unless they get a visually dominant treatment like a CTA (call to action)
 
 ## JavaScript
 
