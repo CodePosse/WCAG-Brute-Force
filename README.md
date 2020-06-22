@@ -57,6 +57,10 @@ There is also a way to add titles to iframes. This helps when you embed third pa
 
 FREEEEEEEEEE
 
+###### More of me
+
+[Weaponized UX](https://www.tadigital.com/blog/weaponized-ux-ui-sniping-your-way-higher-conversions/) | [Dev.to](https://dev.to/codeposse) | [Medium](https://medium.com/@timhunold) | [LinkedIn](https://www.linkedin.com/in/itssobig/) | [StackOverflow](https://stackoverflow.com/users/4071647/codeposse) | [Insta](https://www.instagram.com/pup90210/) | [I actually race](https://scca.com/beverlyhills)
+
 [repo]: https://github.com/CodePosse/WCAG-Brute-Force.git
 [tim hunold]: http://www.itssobig.com/
 [node.js]: http://nodejs.org

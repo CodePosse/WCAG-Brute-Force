@@ -1,0 +1,21 @@
+/* this is a default theme */
+
+/* root is super powerful */
+/* specifying reusable variables even in static CSS is very helpful */
+/* text vs background color is going to be hard to read as a demo */
+:root {
+  --main-bg-color: navy;
+  --main-txt-color: #333;
+  --main-padding: 15px;
+}
+
+/* browser default is 16px, also smallest reccomended font to get to AAA */
+/* specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default */
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: swap;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  padding: var(--main-padding) 10px;
+}
