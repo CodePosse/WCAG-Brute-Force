@@ -1,6 +1,6 @@
 # CSS
 
-I am trying to add some of the obvious and not-so-obvious things here. Remember that you
+I am trying to add some of the obvious and not-so-obvious things here. Remember that you have a lot of options for libraries and frameworks, I understand a lot of you may try Bootstrap, it is fine if you want, but make sure you really understand the code.
 
 ## USAGE
 
