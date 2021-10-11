@@ -24,7 +24,7 @@
   "homepage": "https://github.com/CodePosse/WCAG-Brute-Force#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "gutil": "^1.6.4"
   }
 }
