@@ -24,10 +24,14 @@
   "homepage": "https://github.com/CodePosse/WCAG-Brute-Force#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gutil": "^1.6.4"
   },
   "devDependencies": {
+    "braces": "^3.0.2",
+    "glob-parent": "^6.0.2",
+    "lodash": "^4.17.21",
+    "lodash.template": "^4.5.0",
     "minimatch": "^3.0.4",
     "set-value": "^4.1.0"
   }
