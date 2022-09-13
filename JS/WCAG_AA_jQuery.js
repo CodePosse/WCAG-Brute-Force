@@ -12,6 +12,18 @@ $("img").on("load", function () {
   $(this).filter("[title]").removeAttr("title");
 });
 
+
+
+//a links with titles but no img that dupe text value eg: <a title="xyz">xyz</a>
+$("a[title]").each(function () {
+  var title = this.title;
+  var mytext = this.text;
+  if (title == mytext) {
+    $(this).removeAttr("title");
+  }
+});
+
+
 // fixes missing iframe titles
 $('iframe:not([title])').attr({ title: 'your iframe title' });
 
@@ -51,4 +63,3 @@ $(modal_or_menu_element).keyup(function (event) {
     $('a[href=#modal_or_menu_element_id]').focus();
   }
 });
-
