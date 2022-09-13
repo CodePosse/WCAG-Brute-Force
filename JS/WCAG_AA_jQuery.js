@@ -14,8 +14,8 @@ $("img").on("load", function () {
 
 
 
-//a links with titles but no img that dupe text value eg: <a title="xyz">xyz</a>
-$("a[title]").each(function () {
+//a links with titles but no img that dupe text value eg: <a title="xyz">xyz</a> but it cannot have any gaps/spaces
+$("a[title]*").each(function () {
   var title = this.title;
   var mytext = this.text;
   if (title == mytext) {
