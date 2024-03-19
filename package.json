@@ -1,6 +1,6 @@
 {
   "name": "wcag-brute-force",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "WCAG AA Fixes For Devs",
   "main": "index.js",
   "scripts": {
