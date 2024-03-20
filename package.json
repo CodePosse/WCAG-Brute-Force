@@ -1,6 +1,6 @@
 {
   "name": "wcag-brute-force",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "WCAG AA Fixes For Devs",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/CodePosse/WCAG-Brute-Force#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.12",
     "gulp": "^4.0.2",
     "gutil": "^1.6.4"
   },
@@ -32,7 +32,7 @@
     "glob-parent": "^6.0.2",
     "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
-    "minimatch": "^3.0.4",
+    "minimatch": "^9.0.3",
     "set-value": "^4.1.0"
   }
 }
