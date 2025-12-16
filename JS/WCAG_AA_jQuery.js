@@ -69,3 +69,8 @@ $('a[href$=".pdf"]').each(function () {
   var linktext = $(this).text();
   $(this).attr("aria-label", linktext + " (opens PDF document)");
 });
+// add ARIA labels to document links for doc and docx files
+$('a[href$=".doc"], a[href$=".docx"]').each(function () {
+  var linktext = $(this).text();
+  $(this).attr("aria-label", linktext + " (opens Word document)");
+});   

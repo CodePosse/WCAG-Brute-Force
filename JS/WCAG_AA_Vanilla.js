@@ -64,3 +64,9 @@ document.querySelectorAll("a[href$='.pdf']").forEach(a => {
     a.setAttribute("role", "button");
     a.setAttribute("aria-label", "PDF file");
 });
+
+// Word documents need to have a tag for screenreaders
+document.querySelectorAll("a[href$='.doc'], a[href$='.docx']").forEach(a => {
+    a.setAttribute("role", "button");
+    a.setAttribute("aria-label", "Word document");
+});

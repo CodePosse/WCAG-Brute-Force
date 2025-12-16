@@ -66,3 +66,21 @@ gulp.task('Brute-Force', async function () {
     }))
     .pipe(gulp.dest('./prod/html/')); //DUDE, CHANGE ME TO YOUR DESTINATION
 });
+
+/* to run, type: gulp PDF-FIX */
+gulp.task('PDF-FIX', async function () {
+  gulp.src('src/html/*.html') //DUDE, CHANGE ME TO YOUR SOURCE
+    .pipe(cheerio(function ($, file) {
+      $('a[href$=".pdf"]').each(function () {
+        var linktext = $(this).text();
+        $(this).attr("aria-label", linktext + " (opens PDF document)");
+      });
+    }))
+    .pipe(gulp.dest('./prod/html/')); //DUDE, CHANGE ME TO YOUR DESTINATION
+});
+
+// add ARIA labels to document links for doc and docx files
+$('a[href$=".doc"], a[href$=".docx"]').each(function () {
+  var linktext = $(this).text();
+  $(this).attr("aria-label", linktext + " (opens Word document)");
+});
