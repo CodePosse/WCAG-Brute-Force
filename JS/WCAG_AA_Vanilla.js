@@ -57,3 +57,10 @@ var inputs = document.querySelectorAll("input").forEach(function (el) {
     console.log("Placeholders: " + ph + " created for ID:" + inputID);
 });
 
+
+
+/// PDF files need to have a tag for screenreaders 
+document.querySelectorAll("a[href$='.pdf']").forEach(a => {
+    a.setAttribute("role", "button");
+    a.setAttribute("aria-label", "PDF file");
+});

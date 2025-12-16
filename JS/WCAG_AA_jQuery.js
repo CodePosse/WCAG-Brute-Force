@@ -63,3 +63,9 @@ $(modal_or_menu_element).keyup(function (event) {
     $('a[href=#modal_or_menu_element_id]').focus();
   }
 });
+
+// add aria text to pdf links for screenreaders
+$('a[href$=".pdf"]').each(function () {
+  var linktext = $(this).text();
+  $(this).attr("aria-label", linktext + " (opens PDF document)");
+});
