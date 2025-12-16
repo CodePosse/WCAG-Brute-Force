@@ -1,10 +1,11 @@
 # WCAG-Brute-Force
+
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/description/codeposse/WCAG-Brute-Force)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/codeposse/WCAG-Brute-Force)
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/WCAG-Brute-Force/master/package-lock.json&query=$.dependencies.gulp.version&label=gulp&logo=gulp)
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/WCAG-Brute-Force/master/package-lock.json&query=$.dependencies.cheerio.version&label=cheerio)
 
-Brute force WCAG AA patching to pass [wave tool] tests. _Updated: March 20 2024_  more updates due in late 2024
+Brute force WCAG AA patching to pass [wave tool] tests. _Updated: December 15 2025_ more updates due in 2026
 
 ## Overview
 
@@ -23,6 +24,7 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 - Default font size is 16px, never go below 11px for AA. AAA demands smallest can be 16px
 - Try to avoid area wraps with a tags "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
 - Never use `content:` in CSS, screen readers can't see it
+- PDF files are their own issue, but links to them should tell users there is a PDF file
 - [Skip-to method](https://codepen.io/matuzo/pen/RZBNjP#content) I'll add this soon
 - [Style switcher](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
 - [Form Resource](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
