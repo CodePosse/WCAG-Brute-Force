@@ -5,7 +5,7 @@
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/WCAG-Brute-Force/master/package-lock.json&query=$.dependencies.gulp.version&label=gulp&logo=gulp)
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/WCAG-Brute-Force/master/package-lock.json&query=$.dependencies.cheerio.version&label=cheerio)
 
-Brute force WCAG AA patching to pass [wave tool] tests. _Updated: December 15 2025_ more updates due in 2026
+Brute force WCAG AA patching to pass [wave tool] tests. _Updated: January 27 2026_ more updates as I recognize opportunities.
 
 ## Overview
 

@@ -1,6 +1,6 @@
 {
   "name": "wcag-brute-force",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "description": "WCAG AA Fixes For Devs",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "WCAG",
     "Compliance",
     "508",
-    "AA"
+    "AA",
+    "A11y"
   ],
   "author": "Tim Hunold",
   "license": "ISC",
@@ -23,16 +24,15 @@
   },
   "homepage": "https://github.com/CodePosse/WCAG-Brute-Force#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "gulp": "^4.0.2",
+    "cheerio": "^1.2.0",
+    "gulp": "^5.0.1",
     "gutil": "^1.6.4"
   },
   "devDependencies": {
-    "braces": "^3.0.2",
+    "braces": "^3.0.3",
     "glob-parent": "^6.0.2",
-    "lodash": "^4.17.21",
-    "lodash.template": "^4.5.0",
-    "minimatch": "^9.0.3",
+    "lodash": "^4.17.23",
+    "minimatch": "^10.1.1",
     "set-value": "^4.1.0"
   }
 }
