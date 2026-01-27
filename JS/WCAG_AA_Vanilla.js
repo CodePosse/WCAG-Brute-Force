@@ -1,5 +1,6 @@
 // Vanilla JavaScript WCAG Hot Fix //
 /* select a method below that works for you */
+// COPY AND PASTE WHAT YOU NEED INTO YOUR JS FILE or run it all at once
 
 //force doctype and lang attribute
 // this is only needed if the doctype is missing

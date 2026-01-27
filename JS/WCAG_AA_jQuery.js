@@ -1,5 +1,9 @@
 /* heavy-handed jQuery patching */
 
+// COPY AND PASTE WHAT YOU NEED INTO YOUR jQuery FILE
+// or run it all by adding it to your document ready function
+// Start of jQuery WCAG Hot Fix //
+
 //force doctype and lang attribute
 // this is only needed if the doctype is missing
 if (document.doctype == null) {

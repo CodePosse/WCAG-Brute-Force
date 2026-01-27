@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOC creator jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            font-family: Roboto;
+        }
+
+        #toc ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        #toc li {
+            margin: 0.25rem 0;
+        }
+
+        #toc a {
+            text-decoration: none;
+        }
+
+        #toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="toc" aria-label="Table of Contents">
+        <strong>Does this follow a legible order for you?</strong>
+        <ul></ul>
+    </nav>
+    <div>
+        <h3>i'm out of order h3</h3>
+        <h1>I'm content h1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita voluptate, perferendis omnis,
+                deleniti
+                corporis quas illo non alias officiis iure repellat obcaecati consequatur animi ad totam pariatur nemo
+                atque?</p>
+            <h2>hmm fun logical nested h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur debitis blanditiis, neque
+                laborum
+                quaerat sequi nulla saepe adipisci possimus ab labore quasi deserunt officia sunt quae eaque illo
+                pariatur.
+            </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/TOC_jQuery.js"></script>
+</body>
+
+</html>
