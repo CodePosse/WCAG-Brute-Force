@@ -1,4 +1,4 @@
-/* heavy-handed JS patching */
+/* heavy-handed jQuery patching */
 
 //force doctype and lang attribute
 // this is only needed if the doctype is missing
@@ -80,4 +80,23 @@ $('a[href$=".pdf"]').each(function () {
 $('a[href$=".doc"], a[href$=".docx"]').each(function () {
   var linktext = $(this).text();
   $(this).attr("aria-label", linktext + " (opens Word document)");
-});   
+});
+
+// Essential Open Graph Tags (for Social & Accessibility)
+$('head').append('<meta property="og:title" content="Your Page Title Here" />');
+$('head').append('<meta property="og:description" content="Your Page Description Here" />');
+$('head').append('<meta property="og:type" content="website" />');
+$('head').append('<meta property="og:url" content="https://www.yourwebsite.com/your-page-url" />');
+$('head').append('<meta property="og:image" content="https://www.yourwebsite.com/path-to-your-image.jpg" />');
+// Twitter Card Tags (for Social & Accessibility)
+$('head').append('<meta name="twitter:card" content="summary_large_image" />');
+$('head').append('<meta name="twitter:title" content="Your Page Title Here" />');
+$('head').append('<meta name="twitter:description" content="Your Page Description Here" />');
+$('head').append('<meta name="twitter:image" content="https://www.yourwebsite.com/path-to-your-image.jpg" />');
+// Additional Accessibility Tags
+$('head').append('<meta name="description" content="Your Page Description Here" />');
+$('head').append('<meta name="keywords" content="keyword1, keyword2, keyword3" />');
+$('head').append('<meta name="author" content="Your Name or Company" />');
+$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0" />');
+// End of Meta Tags
+// End of jQuery WCAG Hot Fix //

@@ -80,3 +80,25 @@ document.querySelectorAll("a[href$='.pdf']").forEach(a => {
 document.querySelectorAll("a[href$='.doc'], a[href$='.docx']").forEach(a => {
     a.setAttribute("aria-label", "Word document");
 });
+// Essential Open Graph Tags (for Social & Accessibility)
+if (!document.querySelector('meta[property="og:title"]')) {
+    const metaTag = document.createElement('meta');
+    metaTag.setAttribute('property', 'og:title');
+    metaTag.setAttribute('content', 'Your Page Title Here');
+    document.head.appendChild(metaTag);
+}
+// Twitter Card Tags (for Social & Accessibility)
+if (!document.querySelector('meta[name="twitter:card"]')) {
+    const twitterMetaTag = document.createElement('meta');
+    twitterMetaTag.setAttribute('name', 'twitter:card');
+    twitterMetaTag.setAttribute('content', 'summary_large_image');
+    document.head.appendChild(twitterMetaTag);
+}
+// Additional Accessibility Tags
+if (!document.querySelector('meta[name="description"]')) {
+    const descMetaTag = document.createElement('meta');
+    descMetaTag.setAttribute('name', 'description');
+    descMetaTag.setAttribute('content', 'Your Page Description Here');
+    document.head.appendChild(descMetaTag);
+}
+// End of Vanilla JavaScript WCAG Hot Fix //
