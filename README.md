@@ -16,21 +16,22 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 ## WCAG Considerations
 
 - "Pretty" is often the mortal enemy of usable or functional when dealing with limited vision. As you age, you'll appreciate this far more
-- Images require `alt` with a value, do not use `title` because "SEO", `role` attributes are nice too
-- `Iframe` requires `title`
-- `abbr` elements for abbreviation explanations are a good idea, be semantic, it's there for a reason!
+- Images require `alt` or `role` with a value, do not use `title` because some out of touch _MBA_ shouts "SEO!" it doesn't work like that anymore
+- `Iframe` requires `title` for context
+- `abbr` elements for abbreviations and explanations are a good idea, be semantic, it's there for a reason!
 - Specifying a max character width helps wrap text
 - tab key navigation can be reset to respect the linear DOM order and should have a focus bg color (see TOC generator below)
-- All links need to be visually distinct, ie underlined or made to look like a CTA and not hidden because "pretty"
-- Browsers use a default font size of 16px, never go below 11px for AA. AAA demands smallest can be 16px
-- Try to avoid area wraps with `a` tags aka s"[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
-- Never use `content:` in CSS, screen readers can't see it
+- All links need to be visually distinct, _ie underlined or made to look like a CTA_ and not cloaked because "pretty"
+- Browsers use a default font size of 16px, never go below 11px for AA and AAA demands smallest can be 16px
+- Try to avoid area wraps with `a` tags aka "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
+- Never use `content:` in CSS, screen readers can't see it and don't use clickable icons without some hidden text
 - PDF files are their own issue, but links to them should tell users there is a PDF file
 - Docs should have `doctype` and `lang` declared
-- I added Opengraph and Twittercard support
+- Add Opengraph and Twittercard support as it seems some new technology might consider it especially from linked sites
 - [My TOC Generator](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
 - [My Style Switcher](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
 - [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
+- Future consideration: "read more" and "next" are AWFUL to screenreaders. Tab navigation may jump to a link with _zero_ context.
 
 ### Indemnification
 
