@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>Based on HTML5 Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/theme.css" id="default">
-  <link rel="stylesheet" href="../css/theme-wcag.css" id="wcag">
-
+  <link id="siteStylesheet" rel="stylesheet" href="../CSS/theme.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -15,9 +13,11 @@
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <a href="#" id="styleToggle" role="button" aria-pressed="false">
+    Switch stylesheet
+  </a>
+
+  <script src="../JS/styleswap_Vanilla.js"></script>
 
 </body>
 
