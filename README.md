@@ -9,26 +9,27 @@ Brute force WCAG AA patching to pass [wave tool] tests. _Updated: January 27 202
 
 ## Overview
 
-This is a file I ([tim hunold]) am making using CSS and jQuery :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance. It is unlikely to fix everything, but it can help a ton.
+This is a file I ([tim hunold]) am making using CSS and jQuery :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doiung this for future me as much as everyone else out there.
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
 ## WCAG Considerations
 
-- Images require alt with a value, do not use titles
-- Iframes require titles
-- ABBR elements for abbreviation explanations HTML
+- "Pretty" is often the mortal enemy of usable or functional when dealing with limited vision. As you age, you'll appreciate this far more
+- Images require `alt` with a value, do not use `title` because "SEO", `role` attributes are nice too
+- `Iframe` requires `title`
+- `abbr` elements for abbreviation explanations are a good idea, be semantic, it's there for a reason!
 - Specifying a max character width helps wrap text
-- tab key nav can be reset to respect the linear DOM order and should have a focus bg color
-- All links need to be visually distinct, ie underlined or made to look like a CTA
-- Default font size is 16px, never go below 11px for AA. AAA demands smallest can be 16px
-- Try to avoid area wraps with a tags "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
+- tab key navigation can be reset to respect the linear DOM order and should have a focus bg color (see TOC generator below)
+- All links need to be visually distinct, ie underlined or made to look like a CTA and not hidden because "pretty"
+- Browsers use a default font size of 16px, never go below 11px for AA. AAA demands smallest can be 16px
+- Try to avoid area wraps with `a` tags aka s"[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
 - Never use `content:` in CSS, screen readers can't see it
 - PDF files are their own issue, but links to them should tell users there is a PDF file
-- Docs need `doctype` and `lang` declared
+- Docs should have `doctype` and `lang` declared
 - I added Opengraph and Twittercard support
-- [My TOC Generator](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content)
-- [Style Switcher](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) is similar to the [Style switcher spec](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
+- [My TOC Generator](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
+- [My Style Switcher](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
 - [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 
 ### Indemnification
@@ -37,7 +38,7 @@ I make no warranty that this will fix everything, but there is a lot it can help
 
 ## CSS
 
-In CSS I am adding a lot of things, there are comments to what a line is and does, and I use plenty of advanced selectors and pseudo classes. I don't always peovide the actual use samples, but you should be able to understand from the comments.
+In CSS I am adding a lot of generic, obvious things, there are comments to what a line is and does, and I use plenty of advanced selectors and pseudo classes. I don't always provide the actual use samples, but you should be able to understand from the comments.
 
 ### What it does
 
@@ -45,13 +46,13 @@ We define and leverage root and simple variables. Also, there are font-handling 
 
 ## JavaScript
 
-The JS directory has its own README file.
+The [JS directory](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/JS) has its own README file.
 
 Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do here are attribute manipulations and those generally work from early versions on to the modern releases.
 
 Vanilla JavaScript has been added as well.
 
-Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all.
+Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all. I know it's ancient, but as a task runner, it works fast locally, better than GREP statements.
 
 ### What it does
 
