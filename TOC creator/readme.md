@@ -10,4 +10,4 @@ Ok, there are a few methods you should copy-paste and use on your own. One is of
 
 ## DANGER
 
-I STRONGLY advise you use headings, but if you must, add in your own `data-attribute` but AVOID trying `id`s as they are often tied to JavaScript functions that can make a user have a very bad day with your naming conventions! This said, if you copy-paste the script blindly, the TOC generator adds an `id` to each heading to make it a "scroll-to" anchor and will be reflected in the console's table output.
+I STRONGLY advise you use headings, but if you must, add in your own `data-attribute` but AVOID trying `id`s as they are often tied to JavaScript functions that can make a user have a very bad day with your naming conventions! This said, if you copy-paste the script blindly, the TOC generator adds an `id` to each heading to make it a "scroll-to" anchor and will be reflected in the console's table output. :bug: fingers-crossed you don't have double-use of the `id`.
