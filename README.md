@@ -25,9 +25,11 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 - Try to avoid area wraps with a tags "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
 - Never use `content:` in CSS, screen readers can't see it
 - PDF files are their own issue, but links to them should tell users there is a PDF file
-- [Skip-to method](https://codepen.io/matuzo/pen/RZBNjP#content) I'll add this soon
-- [Style switcher](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
-- [Form Resource](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
+- Docs need `doctype` and `lang` declared
+- I added Opengraph and Twittercard support
+- [My TOC Generator](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content)
+- [Style Switcher](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) is similar to the [Style switcher spec](https://www.w3.org/TR/WCAG20-TECHS/C29.html) I'll add this soon
+- [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 
 ### Indemnification
 
