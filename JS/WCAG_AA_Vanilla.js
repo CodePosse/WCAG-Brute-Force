@@ -1,6 +1,18 @@
 // Vanilla JavaScript WCAG Hot Fix //
 /* select a method below that works for you */
 
+//force doctype and lang attribute
+// this is only needed if the doctype is missing
+if (document.doctype == null) {
+    const doctype = document.implementation.createDocumentType('html', '', '')
+    document.insertBefore(doctype, document.documentElement)
+}
+
+// declare a language in the html tag as US English by default
+if (!document.documentElement.hasAttribute('lang')) {
+    document.documentElement.setAttribute('lang', 'en-US')
+}
+
 // fixes missing alt and remove title attributes
 // it is faster to grab the images and then filter them instead of going back to select all images again
 window.onload = () => {

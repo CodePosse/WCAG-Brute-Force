@@ -1,5 +1,12 @@
 /* heavy-handed JS patching */
 
+//force doctype and lang attribute
+// this is only needed if the doctype is missing
+if (document.doctype == null) {
+  $('html').before('<!DOCTYPE html>');
+}
+// declare a language in the html tag as US English by default
+$('html:not([lang])').attr('lang', 'en-US');
 
 // fixes missing alt and remove title attributes
 // it is faster to grab the images and then filter them instead of going back to select all images again
