@@ -5,7 +5,7 @@
 /* text vs background color is going to be hard to read as a demo */
 :root {
   --main-bg-color: #e3e3e3;
-  --main-txt-color: #666;
+  --main-txt-color: #202020;
   --main-padding: 15px;
 }
 
