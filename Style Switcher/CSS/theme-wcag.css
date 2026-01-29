@@ -7,7 +7,7 @@
   --main-bg-color: #e3e3e3;
   --main-txt-color: #202020;
   --main-padding: 15px;
-}
+   filter: grayscale(75%); /* turn everything to 75% grayscale for better accessibility images can be separate */
 
 /* browser default is 16px, also smallest font to get to AAA */
 /* specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default */
