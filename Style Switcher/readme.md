@@ -21,9 +21,9 @@ I will attempt to have both here but given a lot of people are going away from j
 
 These are other tools that try the same thing, or they may also be a duplicate of what I am writing here.
 
-https://uly.me/css-style-switcher/
-https://www.jqueryscript.net/other/Stylesheet-Switcher-Local-Storage.html
-https://www.inetsolution.com/blog/march-2010/css-style-switcher-a-quick-and-dirty-how-to
-https://github.com/camsjams/jquery-style-switcher
+[https://uly.me/css-style-switcher/](https://uly.me/css-style-switcher/) |
+[https://www.jqueryscript.net/other/Stylesheet-Switcher-Local-Storage.html](https://www.jqueryscript.net/other/Stylesheet-Switcher-Local-Storage.html) |
+[https://www.inetsolution.com/blog/march-2010/css-style-switcher-a-quick-and-dirty-how-to](https://www.inetsolution.com/blog/march-2010/css-style-switcher-a-quick-and-dirty-how-to) |
+[https://github.com/camsjams/jquery-style-switcher](https://github.com/camsjams/jquery-style-switcher) |
 
 [Home](/WCAG-Brute-Force/)
