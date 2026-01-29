@@ -7,6 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../CSS/theme.css" id="theme" />
   <meta name="theme-color" content="#fafafa" />
+  <style>
+    .toggler {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 20px;
+      width: 40px;
+      height: 40px;
+      background: navy;
+      border: 1px solid yellow;
+      text-align: center;
+      line-height: 40px;
+      outline-width: 1px;
+      outline-offset: 0;
+      outline-color: rgba(255, 36, 87, 0.95);
+      outline-style: solid;
+      animation: animateOutline 1s ease infinite;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    @keyframes animateOutline {
+      0% {
+        outline-width: 1px;
+        outline-offset: 0;
+        outline-color: rgba(0, 130, 206, 0);
+      }
+
+      10% {
+        outline-color: rgba(67, 8, 121, 0.75);
+      }
+
+      /* The animation finishes at 50% */
+      50% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(0, 130, 206, 0);
+      }
+
+      100% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(102, 102, 102, 0);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -21,6 +70,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <p><a href="styleswitch_Vanilla.html">VanillaJS version</a></p>
+  <div class="toggler"><a href="#" id="styleToggle2" onclick="$().themeToggle();">&#127912;</a></div>
   <script src="../JS/styleswap_jQuery.js"></script>
 </body>
 
