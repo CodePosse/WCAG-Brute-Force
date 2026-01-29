@@ -8,7 +8,7 @@ In each file there is way more code than you need, so cut-and-paste accordingly.
 
 ### the code
 
-[WCAG_AA_jQuery.js](WCAG_AA_jQuery.js)
+[WCAG_AA_jQuery.js](WCAG_AA_jQuery.js) |
 [WCAG_AA_Vanilla.js](WCAG_AA_Vanilla.js)
 
 ## Coverage

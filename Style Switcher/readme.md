@@ -14,7 +14,7 @@ Where you maye have a background image, lowering the image impact by way of grey
 
 I will attempt to have both here but given a lot of people are going away from jQuery, it is best to have a VanillaJS version thay does not require a library or framework.
 
-[JQ verion](HTML/styleswitch_jQuery.html)
+[JQ verion](HTML/styleswitch_jQuery.html) |
 [Vanilla](HTML/styleswitch_Vanilla.html)
 
 ### Similar Resources

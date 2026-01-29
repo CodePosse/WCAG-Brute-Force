@@ -57,9 +57,9 @@ Gulp with NPM was added as well. You can point it to files and folders to rapidl
 
 ## Live Demos
 
-[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/)
-[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/)
-[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/)
+[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) |
+[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) |
+[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) |
 [Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
 
 ### What it does

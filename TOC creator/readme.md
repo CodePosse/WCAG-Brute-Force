@@ -2,7 +2,7 @@
 
 ### Demos
 
-[Jquery Version](TOC_jquery.html)
+[Jquery Version](TOC_jquery.html) |
 [Vanilla](TOC_vanilla.html)
 
 ## Why
