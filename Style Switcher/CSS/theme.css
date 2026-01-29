@@ -19,3 +19,6 @@ body {
   background-color: var(--main-bg-color);
   padding: var(--main-padding) 10px;
 }
+small {
+  font-size: 12px;
+}
