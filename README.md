@@ -28,8 +28,8 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 - PDF files are their own issue, but links to them should tell users there is a PDF file
 - Docs should have `doctype` and `lang` declared
 - Add Opengraph and Twittercard support as it seems some new technology might consider it especially from linked sites
-- [My TOC Generator](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
-- [My Style Switcher](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
+- [My TOC Generator SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) and [TOC Creator DEMO](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
+- [My Style Switcher SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) or [Style Switcher DEMO](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
 - [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 - Future consideration: "read more" and "next" are AWFUL to screenreaders. Tab navigation may jump to a link with _zero_ context.
 
