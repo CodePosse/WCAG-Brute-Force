@@ -37,6 +37,13 @@ Please let me know if you'd like to contribute to this [repo], this is based mai
 
 I make no warranty that this will fix everything, but there is a lot it can help with.
 
+## My Live Demos
+
+[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) |
+[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) |
+[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) |
+[Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
+
 ## CSS
 
 In CSS I am adding a lot of generic, obvious things, there are comments to what a line is and does, and I use plenty of advanced selectors and pseudo classes. I don't always provide the actual use samples, but you should be able to understand from the comments.
@@ -54,13 +61,6 @@ Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do h
 Vanilla JavaScript has been added as well.
 
 Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all. I know it's ancient, but as a task runner, it works fast locally, better than GREP statements.
-
-## Live Demos
-
-[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) |
-[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) |
-[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) |
-[Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
 
 ### What it does
 
