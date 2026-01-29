@@ -6,9 +6,14 @@ There are multiple files here, one is [jQuery] oriented, the other Vanilla JavaS
 
 In each file there is way more code than you need, so cut-and-paste accordingly.
 
+### the code
+
+[WCAG_AA_jQuery.js](WCAG_AA_jQuery.js)
+[WCAG_AA_Vanilla.js](WCAG_AA_Vanilla.js)
+
 ## Coverage
 
 As of this writing (Jan 27 2026) both jQuery and VanillaJS have fixes for form labels, tab index, adds titles to iframes, and adding missing alt/aria attributes for many things but it is evolving.
-
+[Home](/WCAG-Brute-Force/)
 [jquery]: http://jquery.com
 [es6]: http://es6-features.org/#Constants

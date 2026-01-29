@@ -2,6 +2,10 @@
 
 I am trying to add some of the obvious and not-so-obvious things here. Remember that you have a lot of options for libraries and frameworks, I understand a lot of you may try Bootstrap, it is fine if you want, but make sure you really understand the code.
 
+### the code
+
+[WCAG_AA.css](WCAG_AA.css)
+
 ## USAGE
 
 In each file there is way more code than you need, so cut-and-paste accordingly. Two things a lot of people overlook are tabular navigation and screen reader only context. BootStrap uses `.sr-only` as a way fo things showing up for that screnario, and given what it is, I may be a bit rough, but white text on a dark background can do a lot.
@@ -15,3 +19,5 @@ As of this writing (June 21 2020) both jQuery and VanillaJS have fixes for form 
 ## Notes
 
 Bootstrap has some things to consider around screen readers. [Bootstrap Accessibility](https://getbootstrap.com/docs/4.0/getting-started/accessibility/)
+
+[Home](/WCAG-Brute-Force/)

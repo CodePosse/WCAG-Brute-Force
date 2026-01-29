@@ -2,8 +2,8 @@
 
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/description/codeposse/WCAG-Brute-Force)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/codeposse/WCAG-Brute-Force)
-![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=gulp&logo=gulp&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgulp%22%5D.version)
-![Cheerio](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=cheerio&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fcheerio%22%5D.version)
+![Gulp](https://img.shields.io/badge/dynamic/json?color=green&label=gulp&logo=gulp&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgulp%22%5D.version)
+![Cheerio](https://img.shields.io/badge/dynamic/json?color=green&label=cheerio&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fcheerio%22%5D.version)
 
 Brute force WCAG AA patching to pass [wave tool] tests. _Updated: January 27 2026_ more updates as I recognize opportunities.
 
@@ -54,6 +54,13 @@ Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do h
 Vanilla JavaScript has been added as well.
 
 Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all. I know it's ancient, but as a task runner, it works fast locally, better than GREP statements.
+
+## Live Demos
+
+[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/)
+[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/)
+[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/)
+[Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
 
 ### What it does
 
