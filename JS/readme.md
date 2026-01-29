@@ -4,7 +4,7 @@ There are multiple files here, one is [jQuery] oriented, the other Vanilla JavaS
 
 ## USAGE
 
-In each file there is way more code than you need, so cut-and-paste accordingly.
+In each file there is way more code than you need, so cut-and-paste accordingly. Add these to a page and they should automagically execute and tinker with the DOM.
 
 ### the code
 
