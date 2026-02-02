@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simple VanillaJS CSS switcher for WCAG/ADA</title>
+  <title>3-way VanillaJS CSS switcher for WCAG/ADA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link id="siteStylesheet" rel="stylesheet" href="../CSS/theme.css">
+  <link id="themeStylesheet" rel="stylesheet" href="../CSS/theme.css">
   <meta name="theme-color" content="#fafafa">
   <style>
     .toggler {
@@ -61,10 +61,11 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Simple VanillaJS CSS switcher for WCAG/ADA</p>
-  <p><small>The WCAG CSS file drops everything down to 75% grayscale.</small><br>There is a toggler floating in the
+  <p>3-way VanillaJS CSS switcher for WCAG/ADA</p>
+  <p>The click action here cycles through varying degrees of grayscale and contrast. Default theme is normal,
+    WCAG theme is 50% grayscale, and high-contrast theme is 100% grayscale.<br>There is a toggler floating in the
     bottom right of the page, a lot of folks do this or up near language selectors.</p>
-  <a href="#" id="styleToggle" role="button" aria-pressed="false">
+  <a href="#" id="themeToggle" role="button" aria-pressed="false">
     Switch stylesheet
   </a>
   <p><img src="https://placecats.com/300/200" alt="A cat"></p>
@@ -76,7 +77,7 @@
   </p>
   <div class="toggler"><a href="#" id="styleToggle2">&#127912;</a></div>
 
-  <script src="../JS/styleswap_Vanilla.js"></script>
+  <script src="../JS/styleswap_Vanilla-triple.js"></script>
 
 </body>
 

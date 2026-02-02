@@ -8,7 +8,7 @@
   --main-txt-color: #202020;
   --main-padding: 15px;
   filter: grayscale(
-    50%
+    100%
   ); /* turn everything to 75% grayscale for better accessibility images can be separate */
 }
 /* browser default is 16px, also smallest font to get to AAA */
