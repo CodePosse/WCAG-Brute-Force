@@ -21,3 +21,11 @@ body {
   background-color: var(--main-bg-color);
   padding: var(--main-padding) 10px;
 }
+a {
+  text-decoration: underline !important;
+  &:focus,
+  &:hover {
+    color: #222;
+    background-color: white;
+  }
+}
