@@ -4,7 +4,7 @@
 
 This is a tool that you can use to swap to higher contrast styles for better readability by users with vision requirements.
 
-## Create Two Styles
+## Create Two+ Styles
 
 I strongly believe that you should have your structural layouts in a different file than the themes/styles. It is not only easier to maintain by separation of concerns, but there is less likelihood you will compromise the integrity of the design.
 
@@ -14,8 +14,13 @@ Where you maye have a background image, lowering the image impact by way of grey
 
 I will attempt to have both here but given a lot of people are going away from jQuery, it is best to have a VanillaJS version thay does not require a library or framework.
 
+This first group toggles between two sheets, but you can see how you can extend to select different CSS. It is a simple set an `ID` for the `CSS` in the `head` and then do an `onclick` and change the value of the `href` attribute.
 [jQuery version](HTML/styleswitch_jQuery.html) |
 [Vanilla](HTML/styleswitch_Vanilla.html)
+
+How about you have an array of different levels of contrast users can cycle through:
+[3+ CSS versions in jQuery](HTML/styleswitch_jQuery-triple.html)
+[3+ CSS versions in VanillaJS](HTML/styleswitch_Vanilla-triple.html)
 
 ### Similar Resources
 

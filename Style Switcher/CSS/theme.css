@@ -4,7 +4,7 @@
 /* specifying reusable variables even in static CSS is very helpful */
 /* text vs background color is going to be hard to read as a demo */
 :root {
-  --main-bg-color: teal;
+  --main-bg-color: rgb(155, 252, 252);
   --main-txt-color: #1f1e1e;
   --main-padding: 15px;
 }

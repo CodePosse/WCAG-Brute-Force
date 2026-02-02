@@ -1,6 +1,8 @@
+// Style Switcher VanillaJS CSS toggler
+// Toggles between theme.css and theme-wcag.css
 const toggles = document.querySelectorAll('#styleToggle, #styleToggle2');
 const stylesheet = document.getElementById('siteStylesheet');
-
+// Function to toggle stylesheets
 function toggleStyles(e) {
     e.preventDefault();
 
@@ -15,7 +17,11 @@ function toggleStyles(e) {
         toggle.setAttribute('aria-pressed', String(isFirst));
     });
 }
-
+// Attach event listeners to all toggles
 toggles.forEach(toggle => {
     toggle.addEventListener('click', toggleStyles);
 });
+// Function to swap stylesheets directly
+function swapStylesheet(sheet) {
+    document.getElementById('siteStylesheet').href = sheet;
+}

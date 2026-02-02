@@ -10,11 +10,11 @@
   filter: grayscale(
     100%
   ); /* turn everything to 75% grayscale for better accessibility images can be separate */
+  font-size: 16px !important;
 }
 /* browser default is 16px, also smallest font to get to AAA */
 /* specifying a custom font may take time to load, use swap and a fallback font until it loads Google fonts does by default */
 body {
-  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-display: swap;
   color: var(--main-txt-color);
