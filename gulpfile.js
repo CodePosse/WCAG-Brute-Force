@@ -4,6 +4,7 @@
 /* to use it, at the command line you will first type: npm install to get all the dependencies */
 /* instructions are above the individual tasks */
 /* check out the JS folder for the jQuery file for additional goodies! */
+/* I REPEAT, this does not have everything that is in the jQuery file, so check it out if you want more functionality! */
 var gulp = require("gulp");
 var cheerio = require('gulp-cheerio') //use jquery in gulp
 var gutil = require('gulp-util'); //utilities
