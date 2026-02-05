@@ -1,6 +1,6 @@
 {
   "name": "wcag-brute-force",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "WCAG AA Fixes For Devs",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "braces": "^3.0.3",
     "glob-parent": "^6.0.2",
     "lodash": "^4.17.23",
-    "minimatch": "^10.1.1",
+    "minimatch": "^10.1.2",
     "set-value": "^4.1.0"
   }
 }
