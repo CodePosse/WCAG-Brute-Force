@@ -9,7 +9,7 @@ Brute force WCAG AA patching to pass [wave tool] tests. _Updated: January 27 202
 
 ## Overview
 
-This is a file I ([tim hunold]) am making using CSS and jQuery :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doiung this for future me as much as everyone else out there.
+This is a file I ([tim hunold]) am making using CSS and jQuery :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
