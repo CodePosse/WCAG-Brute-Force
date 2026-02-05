@@ -4,6 +4,7 @@
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/codeposse/WCAG-Brute-Force)
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=green&label=gulp&logo=gulp&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgulp%22%5D.version)
 ![Cheerio](https://img.shields.io/badge/dynamic/json?color=green&label=cheerio&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fcheerio%22%5D.version)
+![Cheerio](https://img.shields.io/badge/dynamic/json?color=green&label=gutil&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgutil%22%5D.version)
 
 Brute force WCAG AA patching to pass [wave tool] tests. _Updated: January 27 2026_ more updates as I recognize opportunities.
 
