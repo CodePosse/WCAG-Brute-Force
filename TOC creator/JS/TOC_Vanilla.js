@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentList = tocRoot;
     let currentLevel = 1;
     const headingsArray = [];
-
+    // Helper: make a stable-ish slug from heading text (fallback if no id)
     function slugify(text) {
         return text
             .toLowerCase()
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return unique;
     }
-
+    // Main loop to process each heading
     headings.forEach((heading, index) => {
         const tag = heading.tagName.toLowerCase();
         const level = parseInt(tag.substring(1), 10);
@@ -69,8 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
             id: id
         });
     });
+    // Log the headings in a table format for easy inspection
     console.group("Headings Index (h1-h6)");
     console.table(headingsArray);
     console.groupEnd();
+    // Expose the headings array globally for further inspection if needed
     window.__headingsIndex = headingsArray;
 }); 

@@ -15,21 +15,29 @@
             font-family: Roboto;
         }
 
-        #toc ul {
-            list-style: none;
-            padding-left: 1rem;
-        }
+        #toc {
+            width: fit-content;
+            border: 1px solid red;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
 
-        #toc li {
-            margin: 0.25rem 0;
-        }
+            ul {
+                list-style: none;
+                padding-left: 1rem;
+            }
 
-        #toc a {
-            text-decoration: none;
-        }
+            li {
+                margin: 0.25rem 0;
+            }
 
-        #toc a:hover {
-            text-decoration: underline;
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
@@ -37,23 +45,22 @@
 
 <body>
     <nav id="toc" aria-label="Table of Contents">
-        <strong>Does this follow a legible order for you?</strong>
+        <strong>Does this follow a logical order for you?</strong>
         <ul></ul>
     </nav>
-
     <div>
-        <h3>i'm out of order h3</h3>
-        <h1>I'm content h1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita voluptate, perferendis omnis,
-                deleniti
-                corporis quas illo non alias officiis iure repellat obcaecati consequatur animi ad totam pariatur nemo
-                atque?</p>
-            <h2>hmm fun logical nested h2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur debitis blanditiis, neque
-                laborum
-                quaerat sequi nulla saepe adipisci possimus ab labore quasi deserunt officia sunt quae eaque illo
-                pariatur.
-            </p>
+        <h3>i'm an out of order (h3)</h3>
+        <h1>I'm content (h1)</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita voluptate, perferendis omnis,
+            deleniti
+            corporis quas illo non alias officiis iure repellat obcaecati consequatur animi ad totam pariatur nemo
+            atque?</p>
+        <h2>I'm an (h2) that follows an (h1)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur debitis blanditiis, neque
+            laborum
+            quaerat sequi nulla saepe adipisci possimus ab labore quasi deserunt officia sunt quae eaque illo
+            pariatur.
+        </p>
     </div>
     <p>All the headings are now IDs unless you disable that function because the TOC is going to link to those anchors.
     </p>

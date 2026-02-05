@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     const headingsArray = [];
-
+    // Collect heading info into an array for console.table
     $("h1, h2, h3, h4, h5, h6").each(function (index) {
         headingsArray.push({
             tab_index: index + 1,
@@ -105,7 +105,7 @@ $(document).ready(function () {
             id: this.id || null
         });
     });
-
+    // Log the headings in a table format for easy inspection
     console.group("Headings Index (h1-h6)");
     console.table(headingsArray);
     console.groupEnd();
