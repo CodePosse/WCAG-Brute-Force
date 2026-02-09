@@ -74,9 +74,19 @@ var inputs = document.querySelectorAll("input").forEach(function (el) {
 // DANGER ZONE: this is a brute force method that may cause issues if you have content that is visually hidden but should be read by screen readers. Use with caution and test thoroughly.
 document.querySelectorAll('*').forEach(el => {
     const style = window.getComputedStyle(el);
-    // Check for common 'hidden' states
+
+    // 1. Check if the element is hidden
     if (style.display === 'none' || style.visibility === 'hidden') {
-        el.setAttribute('aria-hidden', 'true');
+
+        // 2. Check if it has any ARIA attributes
+        const hasAria = Array.from(el.attributes).some(attr =>
+            attr.name.startsWith('aria-')
+        );
+
+        // 3. Only apply if no ARIA attribute exists
+        if (!hasAria) {
+            el.setAttribute('aria-hidden', 'true');
+        }
     }
 });
 
