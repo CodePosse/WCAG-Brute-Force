@@ -14,7 +14,7 @@ This is a file I ([tim hunold]) am making using CSS and [jQuery] 3.7.1 :poop: (p
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
-## Directions
+### Directions
 
 You can directly link the JavaScript files to your pages, it'll do a lot, but make sure you review them to make sure you are not adding things you don't need. Same for the CSS reset of sorts. Cut-paste as needed is the best way. If you have a static site you want to update enmasse, try using the [Gulp] task. It'll scour your HTML files, and using [jQuery], it will rewrite things in the DOM directly and then spit them out.
 
@@ -73,6 +73,11 @@ We add missing alt attributes with a value and alts without values, plus a defau
 We also remove tabindexes and then re-add to clickable links in the order from the DOM tree in a linear fashion.
 
 There is also a way to add titles to iframes. This helps when you embed third party code like from Vimeo. I will add an advanced way to detect the domain it is calling and then use it to have contextual titles.
+
+### TODO:
+
+- [ ] Update to [jQuery] v4
+- [ ] Proper "jump to" nav
 
 ## License
 
