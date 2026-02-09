@@ -10,28 +10,31 @@ Brute force WCAG AA patching to pass [wave tool] tests. _Updated: Feb 5 2026_ mo
 
 ## Overview
 
-This is a file I ([tim hunold]) am making using CSS and jQuery :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
+This is a file I ([tim hunold]) am making using CSS and [jQuery] 3.7.1 :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA compliance triage. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
+## Directions
+
+You can directly link the JavaScript files to your pages, it'll do a lot, but make sure you review them to make sure you are not adding things you don't need. Same for the CSS reset of sorts. Cut-paste as needed is the best way. If you have a static site you want to update enmasse, try using the [Gulp] task. It'll scour your HTML files, and using [jQuery], it will rewrite things in the DOM directly and then spit them out.
+
 ## WCAG Considerations
 
-- "Pretty" is often the mortal enemy of usable or functional when dealing with limited vision. As you age, you'll appreciate this far more
+- [My TOC Generator SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) and [TOC Creator DEMO](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
+- [My Style Switcher SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) or [Style Switcher DEMO](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
+- [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 - Images require `alt` or `role` with a value, do not use `title` because some out of touch _MBA_ shouts "SEO!" it doesn't work like that anymore
 - `Iframe` requires `title` for context
 - `abbr` elements for abbreviations and explanations are a good idea, be semantic, it's there for a reason!
 - Specifying a max character width helps wrap text
-- tab key navigation can be reset to respect the linear DOM order and should have a focus bg color (see TOC generator below)
-- All links need to be visually distinct, _ie underlined or made to look like a CTA_ and not cloaked because "pretty"
-- Browsers use a default font size of 16px, never go below 11px for AA and AAA demands smallest can be 16px
+- tab key navigation can be reset to respect the linear DOM order and should have a focus bg color (see TOC generator above)
+- All links need to be visually distinct, _ie underlined or made to look like a CTA_ and not cloaked because it's "pretty"
+- Browsers use a default font size of 16px, never go below 11px for AA and AAA demands smallest can be 16px, plus after 40, you'll appreciate why
 - Try to avoid area wraps with `a` tags aka "[block links](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)"
 - Never use `content:` in CSS, screen readers can't see it and don't use clickable icons without some hidden text
-- PDF files are their own issue, but links to them should tell users there is a PDF file
+- PDF/Doc files are their own issue, but links to them should tell users there is a PDF/Doc file, though some services like SiteImprove still ding you because the label should not only mention the presence of a doc, but the name of the doc.
 - Docs should have `doctype` and `lang` declared
-- Add Opengraph and Twittercard support as it seems some new technology might consider it especially from linked sites
-- [My TOC Generator SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/TOC%20creator) and [TOC Creator DEMO](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) is pretty similar to the [Skip-to method spec](https://codepen.io/matuzo/pen/RZBNjP#content) where it grabs and makes a TOC or you can use it to lig directly to the console for debugging.
-- [My Style Switcher SRC](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/Style%20Switcher) or [Style Switcher DEMO](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/) is similar to the [Style switcher idea](https://www.w3.org/TR/WCAG20-TECHS/C29.html) where you can have a "normal" one, and then an "enhanced" one for those that might have vision issues.
-- [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
+- Adding Opengraph and Twittercard support as it seems some new technology might consider it especially from linked sites
 - Future consideration: "read more" and "next" are AWFUL to screenreaders. Tab navigation may jump to a link with _zero_ context.
 
 ### Indemnification
@@ -80,8 +83,8 @@ FREEEEEEEEEE
 [Weaponized UX](https://timhunold.medium.com/weaponized-ux-ui-sniping-your-way-to-higher-conversions-def0d62f22df) | [Dev.to](https://dev.to/codeposse) | [Medium](https://medium.com/@timhunold) | [LinkedIn](https://www.linkedin.com/in/itssobig/) | [StackOverflow](https://stackoverflow.com/users/4071647/codeposse) | [Insta](https://www.instagram.com/pup90210/) | [I actually race](https://scca.com/beverlyhills)
 
 [repo]: https://github.com/CodePosse/WCAG-Brute-Force.git
-[tim hunold]: http://www.itssobig.com/
-[node.js]: http://nodejs.org
-[twitter bootstrap]: http://twitter.github.com/bootstrap/
-[jquery]: http://jquery.com
+[tim hunold]: https://www.itssobig.com/
+[node.js]: https://nodejs.org
+[twitter bootstrap]: https://twitter.github.com/bootstrap/
+[jQuery]: https://jquery.com
 [wave tool]: https://wave.webaim.org/
