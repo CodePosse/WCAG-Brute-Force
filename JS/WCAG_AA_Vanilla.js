@@ -70,7 +70,7 @@ var inputs = document.querySelectorAll("input").forEach(function (el) {
     console.log("Placeholders: " + ph + " created for ID:" + inputID);
 });
 
-// Hidden content should be hidden from screen readers too
+// Hidden content should be hidden from screen readers too incl CSS declared visually hidden classes
 // DANGER ZONE: this is a brute force method that may cause issues if you have content that is visually hidden but should be read by screen readers. Use with caution and test thoroughly.
 document.querySelectorAll('*').forEach(el => {
     const style = window.getComputedStyle(el);
@@ -89,6 +89,25 @@ document.querySelectorAll('*').forEach(el => {
         }
     }
 });
+
+// ALTERNATE VERSION for DOM only hidden elements (not CSS hidden elements) - this is more precise but may miss some visually hidden content that is hidden via CSS instead of DOM methods.
+/* 
+document.querySelectorAll('[style*="display"], [style*="visibility"]').forEach(el => {
+  // 1. Check for explicit inline style values
+  const isInlineHidden = el.style.display === 'none' || el.style.visibility === 'hidden';
+
+  // 2. Check if any attribute name starts with "aria-"
+  const hasAria = Array.from(el.attributes).some(attr => 
+    attr.name.startsWith('aria-')
+  );
+
+  // 3. Apply only if inline-hidden and no ARIA present
+  if (isInlineHidden && !hasAria) {
+    el.setAttribute('aria-hidden', 'true');
+  }
+});
+*/
+
 
 /// PDF files need to have a tag for screenreaders 
 document.querySelectorAll("a[href$='.pdf']").forEach(a => {

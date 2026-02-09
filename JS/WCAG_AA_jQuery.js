@@ -76,15 +76,24 @@ $(modal_or_menu_element).keyup(function (event) {
 });
 
 
-// Hidden content should be hidden from screen readers too
+// Hidden content should be hidden from screen readers too incl CSS declared visually hidden classes
 // DANGER ZONE: this is a brute force method that may cause issues if you have content that is visually hidden but should be read by screen readers. Use with caution and test thoroughly.
 $(":hidden").filter(function () {
+  //swap for $('[style*="display: none"]').filter(function () { if you want to target only DOM hidden elements and not CSS hidden elements. This is more precise but may miss some visually hidden content that is hidden via CSS instead of DOM methods.
+
   // Check if any attribute name starts with "aria-"
   const hasAria = Array.from(this.attributes).some(attr =>
     attr.name.startsWith('aria-')
   );
 
   // Return true only if it has NO aria attributes
+  return !hasAria;
+}).attr("aria-hidden", "true");
+
+// variation for ONLY DOM hidden elements
+// Targets elements with "display: none" exactly in their style attribute
+$('[style*="display: none"]').filter(function () {
+  const hasAria = Array.from(this.attributes).some(attr => attr.name.startsWith('aria-'));
   return !hasAria;
 }).attr("aria-hidden", "true");
 
