@@ -78,6 +78,8 @@ There is also a way to add titles to iframes. This helps when you embed third pa
 
 - [ ] Update to [jQuery] v4
 - [ ] Proper "jump to" nav
+- [ ] Update Gulp task
+- [ ] Gulp alternative
 
 ## License
 
