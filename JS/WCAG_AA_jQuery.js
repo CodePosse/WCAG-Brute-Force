@@ -75,6 +75,13 @@ $(modal_or_menu_element).keyup(function (event) {
   }
 });
 
+
+// Hidden content should be hidden from screen readers too
+// DANGER ZONE: this is a brute force method that may cause issues if you have content that is visually hidden but should be read by screen readers. Use with caution and test thoroughly.
+$("*").each(function () {
+  $(":hidden").attr("aria-hidden", "true");
+});
+
 // add aria text to pdf links for screenreaders
 $('a[href$=".pdf"]').each(function () {
   var linktext = $(this).text();

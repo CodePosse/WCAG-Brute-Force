@@ -70,7 +70,15 @@ var inputs = document.querySelectorAll("input").forEach(function (el) {
     console.log("Placeholders: " + ph + " created for ID:" + inputID);
 });
 
-
+// Hidden content should be hidden from screen readers too
+// DANGER ZONE: this is a brute force method that may cause issues if you have content that is visually hidden but should be read by screen readers. Use with caution and test thoroughly.
+document.querySelectorAll('*').forEach(el => {
+    const style = window.getComputedStyle(el);
+    // Check for common 'hidden' states
+    if (style.display === 'none' || style.visibility === 'hidden') {
+        el.setAttribute('aria-hidden', 'true');
+    }
+});
 
 /// PDF files need to have a tag for screenreaders 
 document.querySelectorAll("a[href$='.pdf']").forEach(a => {
