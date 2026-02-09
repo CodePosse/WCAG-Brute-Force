@@ -2,12 +2,12 @@
 
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/description/codeposse/WCAG-Brute-Force)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/codeposse/WCAG-Brute-Force)
-![jQuery](https://img.shields.io/badge/jQuery-3.7.1-blue)
+![jQuery](https://img.shields.io/badge/jQuery-3.7.1-orange)
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=green&label=gulp&logo=gulp&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgulp%22%5D.version)
 ![Cheerio](https://img.shields.io/badge/dynamic/json?color=green&label=cheerio&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fcheerio%22%5D.version)
 ![Cheerio](https://img.shields.io/badge/dynamic/json?color=green&label=gutil&url=https%3A%2F%2Fraw.githubusercontent.com%2FCodePosse%2FWCAG-Brute-Force%2Fmaster%2Fpackage-lock.json&query=%24.packages%5B%22node_modules%2Fgutil%22%5D.version)
 
-Brute force WCAG AA patching to pass [wave tool] tests. _Updated: Feb 5 2026_ more updates as I recognize opportunities.
+Brute force WCAG AA patching to pass [wave tool] tests. _Updated: Feb 9 2026_ more updates as I recognize opportunities.
 
 ## Overview
 
