@@ -125,4 +125,16 @@ $('head').append('<meta name="keywords" content="keyword1, keyword2, keyword3" /
 $('head').append('<meta name="author" content="Your Name or Company" />');
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0" />');
 // End of Meta Tags
+
+
+// Google Translate widget accessibility fix - this is a common issue with the Google Translate widget where it generates elements with IDs starting with "goog-gt-" that are not accessible. This code adds aria-hidden and tabindex attributes to those elements to hide them from screen readers and remove them from the tab order, while also adding an aria-label for reference.
+$('[id^="goog-gt-"]').each(function () {
+  $(this).attr({
+    'aria-hidden': 'true',
+    'tabindex': '-1',
+    'aria-label': this.id
+  });
+});
+
+
 // End of jQuery WCAG Hot Fix //

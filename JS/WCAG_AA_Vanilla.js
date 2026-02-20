@@ -139,4 +139,12 @@ if (!document.querySelector('meta[name="description"]')) {
     descMetaTag.setAttribute('content', 'Your Page Description Here');
     document.head.appendChild(descMetaTag);
 }
+
+// Google Translate widget accessibility fix - this is a common issue with the Google Translate widget where it generates elements with IDs starting with "goog-gt-" that are not accessible. This code adds aria-hidden and tabindex attributes to those elements to hide them from screen readers and remove them from the tab order, while also adding an aria-label for reference.
+document.querySelectorAll('[id^="goog-gt-"]').forEach(el => {
+    el.setAttribute('aria-hidden', 'true');
+    el.setAttribute('tabindex', '-1');
+    el.setAttribute('aria-label', el.id);
+});
+
 // End of Vanilla JavaScript WCAG Hot Fix //

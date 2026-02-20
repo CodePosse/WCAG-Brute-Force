@@ -26,6 +26,7 @@ You can directly link the JavaScript files to your pages, it'll do a lot, but ma
 - [Form Resource spec](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript) Good info
 - Images require `alt` or `role` with a value, do not use `title` because some out of touch _MBA_ shouts "SEO!" it doesn't work like that anymore
 - `Iframe` requires `title` for context
+- Google translate free version adds some voting (depricated?) inputs without labels so we fix that with a label and ARIA hide.
 - `abbr` elements for abbreviations and explanations are a good idea, be semantic, it's there for a reason!
 - Specifying a max character width helps wrap text
 - tab key navigation can be reset to respect the linear DOM order and should have a focus bg color (see TOC generator above)
