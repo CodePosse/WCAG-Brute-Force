@@ -147,31 +147,25 @@ document.querySelectorAll('[id^="goog-gt-"]').forEach(el => {
     el.setAttribute('aria-label', el.id);
 });
 
-
-
 // same but if your jquery comes before the google translate script, you need this to see DOM mutations
 /*
 document.addEventListener('DOMContentLoaded', function () {
-
   function fixGoogleTranslateAccessibility(node) {
     // If the node itself matches
     if (node.id && node.id.startsWith('goog-gt-')) {
       applyAttributes(node);
     }
-
     // If children match
     if (node.querySelectorAll) {
       const matches = node.querySelectorAll('[id^="goog-gt-"]');
       matches.forEach(applyAttributes);
     }
   }
-
   function applyAttributes(el) {
     el.setAttribute('aria-hidden', 'true');
     el.setAttribute('tabindex', '-1');
     el.setAttribute('aria-label', el.id);
   }
-
   const observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
       mutation.addedNodes.forEach(function (node) {
@@ -181,12 +175,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-
   observer.observe(document.body, {
     childList: true,
     subtree: true
   });
-
 });
 */
 
