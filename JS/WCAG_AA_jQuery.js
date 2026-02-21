@@ -136,5 +136,23 @@ $('[id^="goog-gt-"]').each(function () {
   });
 });
 
+// same but if your jquery comes before the google translate script, you need this to see DOM mutations
+/*
+$(function () {
+  const observer = new MutationObserver(function () {
+    $('[id^="goog-gt-"]').each(function () {
+      $(this).attr({
+        'aria-hidden': 'true',
+        'tabindex': '-1',
+        'aria-label': this.id
+      });
+    });
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+*/
 
 // End of jQuery WCAG Hot Fix //
