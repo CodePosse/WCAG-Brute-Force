@@ -4,16 +4,15 @@ There are multiple files here, one is [jQuery] oriented, the other Vanilla JavaS
 
 ## USAGE
 
-In each file there is way more code than you need, so cut-and-paste accordingly. Add these to a page and they should automagically execute and tinker with the DOM.
+In each file there is way more code than you need, so cut-and-paste accordingly or just add a link to it like any other script file. Adding these to a page, they should automagically (DOM manipulation) execute and tinker with the DOM.
 
 ### the code
 
-[WCAG_AA_jQuery.js](WCAG_AA_jQuery.js) |
-[WCAG_AA_Vanilla.js](WCAG_AA_Vanilla.js)
+[WCAG_AA_jQuery.js](WCAG_AA_jQuery.js) | [WCAG_AA_Vanilla.js](WCAG_AA_Vanilla.js)
 
 ## Coverage
 
-As of this writing (Jan 27 2026) both jQuery and VanillaJS have fixes for form labels, tab index, adds titles to iframes, and adding missing alt/aria attributes for many things but it is evolving.
+As of this writing (Mar 17 2026) both jQuery and VanillaJS have fixes for form labels, tab index, adds titles to iframes, and adding missing alt/aria attributes for many things but it is evolving.
 [Home](https://codeposse.github.io/WCAG-Brute-Force/)
 
 [jquery]: http://jquery.com
