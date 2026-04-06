@@ -31,8 +31,8 @@
   "devDependencies": {
     "braces": "^3.0.3",
     "glob-parent": "^6.0.2",
-    "lodash": "^4.17.23",
-    "minimatch": "^10.1.2",
+    "lodash": "^4.18.1",
+    "minimatch": "^10.2.5",
     "set-value": "^4.1.0"
   }
 }
