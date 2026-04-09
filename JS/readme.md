@@ -11,7 +11,7 @@ In each file there is way more code than you need, so cut-and-paste accordingly 
 [WCAG_AA_jQuery.js](WCAG_AA_jQuery.js) | [WCAG_AA_Vanilla.js](WCAG_AA_Vanilla.js)
 
 ## Files individually broken out
-[Vanilla](wcag_split_js) | [jQuery]()
+[Vanilla](wcag_split_js) | [jQuery](wcag_split_jquery_js)
 
 ## Coverage
 
