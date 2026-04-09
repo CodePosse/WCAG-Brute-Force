@@ -1,7 +1,7 @@
 {
   "name": "wcag-brute-force",
-  "version": "2.0.0",
-  "description": "WCAG AA Fixes For Devs",
+  "version": "2.2.0",
+  "description": "WCAG AA Fixes For Devs in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,10 @@
     "Compliance",
     "508",
     "AA",
-    "A11y"
+    "A11y",
+    "Web Accessibility",
+    "Accessibility",
+    "WebAIM"
   ],
   "author": "Tim Hunold",
   "license": "ISC",
