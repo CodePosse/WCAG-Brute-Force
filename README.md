@@ -7,7 +7,7 @@
 
   
 
-Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities. **All this stuff HELPS SEO!!!**
+Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. <u>*Updated: September 9 2026*</u> more updates as I recognize opportunities. <u>**All this stuff HELPS SEO!!!**</u>
 
   #### Table of Contents
 
