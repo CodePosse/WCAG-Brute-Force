@@ -7,7 +7,7 @@
 
   
 
-Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
+Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities. **All this stuff HELPS SEO!!!**
 
   #### Table of Contents
 
@@ -18,7 +18,7 @@ Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. _**U
 
   
 
-This is a repo I ([tim hunold]) am making in CSS, [jQuery] 3.7.1 :poop: and VanillaJS (option) to help patch a site quickly for the purpose of 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton. **All this stuff HELPS SEO!!!**
+This is a repo I ([tim hunold]) am making in CSS, [jQuery] 3.7.1 :poop: and VanillaJS (option) to help patch a site quickly for the purpose of 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton.
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with, your experience may vary.
 
