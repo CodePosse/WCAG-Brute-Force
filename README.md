@@ -11,7 +11,7 @@ Brute force WCAG AA patching to comply, and pass, [wave tool] and [Lighthouse] t
 
   ## Table of Contents
 
-[Overview](#overview) | [Instructions](#instructions) | [WCAG Considerations 🚸](#wcag-considerations-) | [AAA Notes 🐛](#aaa-notes-) | [My Live Demos 🎉](#my-live-demos-) | [CSS](#css) | [JavaScript](#javascript) | [TODO 🚧](#todo-) | [License](#license)
+[Overview](#overview) | [Instructions](#instructions) | [WCAG Considerations](#wcag-considerations-children_crossing) | [AAA Notes](#aaa-notes-bug) | [Live Demos](#my-live-demos-tada) | [CSS](#css) | [JavaScript](#javascript) | [TO-DO](#todo-construction) | [License](#license)
 
 
 ## Overview
