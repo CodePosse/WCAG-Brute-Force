@@ -9,7 +9,10 @@
 
 Brute force WCAG AA patching to comply, and pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
 
-  
+  ## Table of Contents
+
+[Overview](#overview) | [Instructions](#instructions) | [WCAG Considerations 🚸](#wcag-considerations-) | [AAA Notes 🐛](#aaa-notes-) | [My Live Demos 🎉](#my-live-demos-) | [CSS](#css) | [JavaScript](#javascript) | [TODO 🚧](#todo-) | [License](#license)
+
 
 ## Overview
 
