@@ -106,7 +106,7 @@ In CSS I am adding a lot of generic, obvious things, there are comments to what 
 
   
 
-We define and leverage root and simple variables. Also, there are font-handling methods that are often overlooked. It also calls out that links need to have underlines unless they get a visually dominant treatment like a CTA (call to action)
+We define and leverage root and simple variables. Also, there are font-handling methods that are often overlooked. It also calls out that links need to have underlines unless they get a visually dominant treatment like a CTA (call to action). We avoid animation/transiotions as they ar lost on screen readers and for those with flashing sensativity, they can cause seizures.
 
   
 
@@ -114,17 +114,11 @@ We define and leverage root and simple variables. Also, there are font-handling 
 
   
 
-The [JS directory](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/JS) has its own README file.
+The [JS directory](https://github.com/CodePosse/WCAG-Brute-Force/tree/master/JS) has its own README file and the names tell you what they do.
 
   
 
-Ok, [jQuery] is used, it is ubiquitous so it is easy to use. Most of what I do here are attribute manipulations and those generally work from early versions on to the modern releases.
-
-  
-
-Vanilla JavaScript has been added as well.
-
-  
+Vanilla JavaScript has been added as well as [jQuery], it is ubiquitous so it is easy to use. Most of what I do here are DOM attribute manipulations and those generally work from early versions on to the modern releases.  
 
 Gulp with NPM was added as well. You can point it to files and folders to rapidly fix compoinents or static files. Gulp.js comments explain it all. I know it's ancient, but as a task runner, it works fast locally, better than GREP statements.
 
@@ -133,16 +127,11 @@ Gulp with NPM was added as well. You can point it to files and folders to rapidl
 ### What it does
 
   
-
-We add missing alt attributes with a value and alts without values, plus a default role. The next thing it does is remove titles from images.
-
-  
-
-We also remove tabindexes and then re-add to clickable links in the order from the DOM tree in a linear fashion.
-
-  
-
-There is also a way to add titles to iframes. This helps when you embed third party code like from Vimeo. I will add an advanced way to detect the domain it is calling and then use it to have contextual titles.
+- Add missing alt attributes with a value and alts without values, plus a default role. 
+- The next thing it does is remove titles from images.
+- We also remove tabindexes and then re-add to clickable links in the order from the DOM tree in a linear fashion.
+- Add titles to iframes. This helps when you embed third party code like maps/media. I will add an advanced way to detect the domain it is calling and then use it to have contextual titles.
+- Lots more in the files including SEO/metadata stuff.
 
   
 
