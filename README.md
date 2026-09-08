@@ -7,7 +7,7 @@
 
   
 
-Brute force WCAG AA patching to pass [wave tool] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
+Brute force WCAG AA patching to pass [wave tool] and Lighthouse tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
 
   
 
@@ -19,9 +19,13 @@ This is a file I ([tim hunold]) am making using CSS, [jQuery] 3.7.1 :poop: and v
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
+*Your greatest enemy to compliance are design and marketing/product. They tend to choose "pretty" instead of the law.*
+
 ### _Warning_ :bricks: :boom: :bug:
   
 Sometimes users have JavaScript disabled, sometimes even CSS, this is going to be a problem for everything I made here. I will try to make a better CSS file that needs no JavaScript, but nobody can guarantee what the user has on their side.
+
+Touch target sizes need to be WCAG 2.2 Standard (Legal Baseline): Interactive elements must be at least 24px × 24px.
 
   
 
