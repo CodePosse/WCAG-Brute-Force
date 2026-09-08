@@ -7,7 +7,7 @@
 
   
 
-Brute force WCAG AA patching to pass [wave tool] and Lighthouse tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
+Brute force WCAG AA patching to comply, and pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
 
   
 
@@ -15,24 +15,20 @@ Brute force WCAG AA patching to pass [wave tool] and Lighthouse tests. _**Update
 
   
 
-This is a file I ([tim hunold]) am making using CSS, [jQuery] 3.7.1 :poop: and vanilla JS (as an option) to help patch a site quickly for the purpose of attempting 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
+This is a repo I ([tim hunold]) am making in CSS, [jQuery] 3.7.1 :poop: and VanillaJS (option) to help patch a site quickly for the purpose of 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton.
 
-Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
+Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with, your experience may vary.
 
-Your greatest enemy to compliance are design and marketing/product. They tend to choose "pretty" instead of the law.
-
-Remember this key phrase: *"if we ship to design spec then who owns the _legal_ liability on this because engineering have raised compliance concerns"*
+Remember this key phrase: *"if we ship to design spec then who owns the _legal_ liability because engineering have raised compliance concerns"* Your greatest enemy to compliance are design and marketing/product. They tend to choose "pretty" instead of the law and it has gotten my clients sued. Touch target sizes need to be WCAG 2.2 Standard (Legal Baseline): Interactive elements must be at least 24px × 24px, this is the most common design flaw.
 
 ### _Warning_ :bricks: :boom: :bug:
   
-Sometimes users have JavaScript disabled, sometimes even CSS, this is going to be a problem for everything I made here. I will try to make a better CSS file that needs no JavaScript, but nobody can guarantee what the user has on their side.
+Sometimes users have JavaScript or ebven CSS disabled, this is going to be a problem for everything I made here but might be fine if your HTML is in order. I will try to make a better CSS file that needs no JavaScript, but nobody can guarantee what the user has on their side.
 
-Touch target sizes need to be WCAG 2.2 Standard (Legal Baseline): Interactive elements must be at least 24px × 24px.
 
-  
+## Instructions
 
-### Directions
-You can directly link the JavaScript files to your pages, it'll do a lot, but make sure you review them to make sure you are not adding things you don't need. Same for the CSS reset of sorts. Copy-paste as needed is the best way. If you have a static site you want to update en masse, try using the [Gulp] task. It'll scour your HTML files, and using [jQuery], it will rewrite things in the DOM directly and then spit them out.
+Directly link the JavaScript files to your pages with `<script>` tags, it'll do a lot, but make sure you review them to make sure you are not adding things you don't need. Same for the CSS reset of sorts. Copy-paste as needed is the best way. If you have a static site you want to update en-masse, try using the [Gulp] task. It'll scour your HTML files, and using [jQuery], it will rewrite things in the DOM directly and then spit them out.
 
   
 
@@ -190,3 +186,5 @@ FREEEEEEEEEE
 [wave tool]: https://wave.webaim.org/
 
 [Gulp]:https://gulpjs.com/
+
+[Lighthouse]:https://developer.chrome.com/docs/lighthouse/accessibility/scoring
