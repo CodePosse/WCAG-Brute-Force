@@ -19,7 +19,9 @@ This is a file I ([tim hunold]) am making using CSS, [jQuery] 3.7.1 :poop: and v
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
-*Your greatest enemy to compliance are design and marketing/product. They tend to choose "pretty" instead of the law.*
+Your greatest enemy to compliance are design and marketing/product. They tend to choose "pretty" instead of the law.
+
+Remember this key phrase: *"if we ship to design spec then who owns the _legal_ liability on this because engineering have raised compliance concerns"*
 
 ### _Warning_ :bricks: :boom: :bug:
   
