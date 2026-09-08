@@ -7,11 +7,11 @@
 
   
 
-Brute force WCAG AA patching to comply, and pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
+Hotfix WCAG/AA patching to comply/pass, [wave tool] and [Lighthouse] tests. _**Updated: September 9 2026**_ more updates as I recognize opportunities.
 
-  ### Table of Contents
+  #### Table of Contents
 
-[Overview](#overview) | [Instructions](#instructions) | [WCAG Considerations](#wcag-considerations-children_crossing) | [AAA Notes](#aaa-notes-bug) | [Live Demos](#my-live-demos-tada) | [CSS](#css) | [JavaScript](#javascript) | [TO-DO](#todo-construction) | [License](#license)
+[Overview](#overview) | [Instructions](#instructions) | [WCAG Considerations](#wcag-considerations-children_crossing) | [AAA Notes](#aaa-notes-bug) | [Live Demos](#my-live-demos-tada) | [CSS](#css) | [JavaScript](#javascript) | [TODO](#todo-construction) | [License](#license)
 
 
 ## Overview
@@ -90,7 +90,7 @@ I make no warranty that this will fix everything, but there is a lot it can help
 
   
 
-[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) | [Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) | [TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) | [Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
+[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) | [Brute-force JS/jQ patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) | [TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) | [Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
 
   
 
