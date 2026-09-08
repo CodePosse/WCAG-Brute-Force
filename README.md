@@ -1,5 +1,5 @@
 
-# WCAG-Brute-Force
+# WCAG-Brute-Force :wheelchair:
 
   
 
@@ -28,7 +28,7 @@ You can directly link the JavaScript files to your pages, it'll do a lot, but ma
 
   
 
-## WCAG Considerations
+## WCAG Considerations :children_crossing:
 
   
 
@@ -67,9 +67,9 @@ You can directly link the JavaScript files to your pages, it'll do a lot, but ma
 - Future consideration: "read more" and "next" are AWFUL to screenreaders. Tab navigation may jump to a link with _zero_ context.
 
 
-## AAA notes
+## AAA notes :bug:
 
-As I find more people seeking AAA compliance, I will probably create new directories to specifically tackle this because it will break designs and if you use a CMS, **you are probably going to fail** as they all add in bloat that makes it hard to predict.   
+As I find more people seeking AAA compliance, I will probably create new directories to specifically tackle this because it will break designs and if you use a CMS, _***you are probably going to fail***_ as they all add in bloat that makes it hard to predict.   
 
 ### Indemnification
 
@@ -79,17 +79,11 @@ I make no warranty that this will fix everything, but there is a lot it can help
 
   
 
-## My Live Demos :party:
+## My Live Demos :tada:
 
   
 
-[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) |
-
-[Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) |
-
-[TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) |
-
-[Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
+[WCAG CSS reset](https://codeposse.github.io/WCAG-Brute-Force/CSS/) | [Brute-force JS patcher](https://codeposse.github.io/WCAG-Brute-Force/JS/) | [TOC Creator from Headings](https://codeposse.github.io/WCAG-Brute-Force/TOC%20creator/) | [Style Switcher](https://codeposse.github.io/WCAG-Brute-Force/Style%20Switcher/)
 
   
 
@@ -145,7 +139,7 @@ There is also a way to add titles to iframes. This helps when you embed third pa
 
   
 
-### TODO:
+### TODO: :construction:
 
   
 
