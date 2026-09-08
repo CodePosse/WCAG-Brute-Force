@@ -15,11 +15,13 @@ Brute force WCAG AA patching to pass [wave tool] tests. _**Updated: September 9 
 
   
 
-This is a file I ([tim hunold]) am making using CSS and [jQuery] 3.7.1 :poop: (plus vanilla JS) to help patch a site quickly for the purpose of attempting 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
-
-  
+This is a file I ([tim hunold]) am making using CSS, [jQuery] 3.7.1 :poop: and vanilla JS (as an option) to help patch a site quickly for the purpose of attempting 508 WCAG AA 2, 2.1, 2.2 compliance triage. It is unlikely to fix everything, but it can help a ton. As I age, my eyesight is starting to let me know that I am doing this for future me as much as everyone else out there.
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
+
+## _Warning_ :bricks: :boom: :bug:
+  
+Sometimes users have JavaScript disabled, sometimes even CSS, this is going to be a problem for everything I made here. I will try to make a better CSS file that needs no JavaScript, but nobody can guarantee what the user has on their side.
 
   
 
