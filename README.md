@@ -149,7 +149,7 @@ There is also a way to add titles to iframes. This helps when you embed third pa
 
 - [ ] Proper "jump to" nav
 
-- :white_check_mark: Update Gulp task
+- [x] Update Gulp task
 
 - [ ] Gulp alternative
 
