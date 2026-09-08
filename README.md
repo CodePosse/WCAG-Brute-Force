@@ -66,7 +66,10 @@ You can directly link the JavaScript files to your pages, it'll do a lot, but ma
 
 - Future consideration: "read more" and "next" are AWFUL to screenreaders. Tab navigation may jump to a link with _zero_ context.
 
-  
+
+## AAA notes
+
+As I find more people seeking AAA compliance, I will probably create new directories to specifically tackle this because it will break designs and if you use a CMS, **you are probably going to fail** as they all add in bloat that makes it hard to predict.   
 
 ### Indemnification
 
