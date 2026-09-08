@@ -19,7 +19,7 @@ This is a file I ([tim hunold]) am making using CSS, [jQuery] 3.7.1 :poop: and v
 
 Please let me know if you'd like to contribute to this [repo], this is based mainly on what I currently deal with.
 
-## _Warning_ :bricks: :boom: :bug:
+### _Warning_ :bricks: :boom: :bug:
   
 Sometimes users have JavaScript disabled, sometimes even CSS, this is going to be a problem for everything I made here. I will try to make a better CSS file that needs no JavaScript, but nobody can guarantee what the user has on their side.
 
@@ -149,7 +149,7 @@ There is also a way to add titles to iframes. This helps when you embed third pa
 
 - [ ] Proper "jump to" nav
 
-- [ ] Update Gulp task
+- :white_check_mark: Update Gulp task
 
 - [ ] Gulp alternative
 
